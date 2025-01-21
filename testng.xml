@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation">
+  <test  name="TestNG">
+    <classes>
+      <class name="TestNG.GroupExecution">
+      <methods> 
+      <exclude name="login"></exclude>
+      </methods>
+      
+      
+      
+      </class>
+  
+      
+      
+      <class name="TestNG.Priority">
+      <methods>
+      <exclude name="cs_jspder">
+      </exclude>
+   
+      
+      </methods>
+      
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

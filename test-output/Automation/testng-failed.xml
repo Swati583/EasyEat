@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestNG(failed)">
+    <classes>
+      <class name="TestNG.Priority">
+        <methods>
+          <include name="last"/>
+          <include name="hello"/>
+          <include name="bye"/>
+          <include name="first"/>
+          <include name="cs_spyspider"/>
+        </methods>
+      </class> <!-- TestNG.Priority -->
+      <class name="TestNG.GroupExecution">
+        <methods>
+          <include name="delete"/>
+          <include name="firstTest"/>
+          <include name="lastTest"/>
+          <include name="check"/>
+          <include name="lastSuit"/>
+          <include name="firstSuit"/>
+        </methods>
+      </class> <!-- TestNG.GroupExecution -->
+    </classes>
+  </test> <!-- TestNG(failed) -->
+</suite> <!-- Failed suite [Automation] -->
