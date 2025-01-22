@@ -16,8 +16,10 @@ public class EasyEat {
 		// Launch the browser
 		WebDriver driver = new EdgeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));// wait for loading the web page
+
+		// login
 		driver.get("https://partner.easyeat.ai/login");
 		WebElement username = driver.findElement(By.id("email"));
 		username.click();
@@ -26,6 +28,8 @@ public class EasyEat {
 		password.click();
 		password.sendKeys("devuser@A438");
 		driver.findElement(By.xpath("//span[text()=' LOGIN ']")).click();
+
+		// Creating order
 		driver.findElement(By.xpath("//button[text()=' + Create New Order ']")).click();
 		driver.findElement(By.xpath("//img[@alt=\"Takeaway\"]")).click();
 		driver.findElement(By.xpath("//div[text()=' OPEN ITEM ']")).click();
