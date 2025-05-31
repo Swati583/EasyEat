@@ -23,7 +23,7 @@ public class EasyEat {
 		driver.get("https://partner.easyeat.ai/login");
 		WebElement username = driver.findElement(By.id("email"));
 		username.click();
-		username.sendKeys("devuser-ankitatest@easyeat.ai");
+		username.sendKeys("devuser-ankitatest@easyeat.ai");//user name
 		WebElement password = driver.findElement(By.xpath("//input[@type=\"password\"]"));
 		password.click();
 		password.sendKeys("devuser@A438");
